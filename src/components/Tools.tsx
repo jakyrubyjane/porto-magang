@@ -14,7 +14,6 @@ const tools = [
   { name: "Vue.js", icon: "/skills/vue.js.svg" },
 ];
 
-// Animation variants
 const containerVariants = {
   hidden: {},
   show: {
@@ -25,18 +24,19 @@ const containerVariants = {
   },
 };
 
-
-
 export default function Tools() {
   return (
-    <section id="tools" className="py-24 px-6 max-w-6xl mx-auto text-center">
+    <section
+      id="tools"
+      className="py-24 px-6 max-w-6xl mx-auto text-center"
+    >
       <motion.h2
-          initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-bold mb-12 text-center"
+        className="text-4xl font-bold mb-12 text-center text-zinc-900 dark:text-white"
       >
-        🧰 Tools 
+        🧰 Tools
       </motion.h2>
 
       <motion.div
@@ -49,17 +49,15 @@ export default function Tools() {
         {tools.map((tool) => (
           <motion.div
             key={tool.name}
-            // variants={itemVariants} // ✅ Aktifkan animasi di sini
             className="flex flex-col items-center gap-4 hover:scale-105 transition-transform duration-300"
           >
-            <div className="w-24 h-24 relative">
-              <Image
-                src={tool.icon}
-                alt={tool.name}
-                fill
-                className="object-contain"
-              />
-            </div>
+            <Image
+              src={tool.icon}
+              alt={tool.name}
+              width={96}
+              height={96}
+              className="object-contain"
+            />
             <p className="text-base font-semibold text-zinc-800 dark:text-zinc-100">
               {tool.name}
             </p>

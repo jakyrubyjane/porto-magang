@@ -15,7 +15,7 @@ export default function Contact() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("dzaki.abimanyu@mail.ugm.ac.id");
+    navigator.clipboard.writeText("dzakiachmadabimanyu2004@mail.ugm.ac.id");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -53,7 +53,7 @@ export default function Contact() {
 
       <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-6">
         <a
-          href="mailto:dzaki.abimanyu@mail.ugm.ac.id"
+          href="mailto:dzakiachmadabimanyu2004@mail.ugm.ac.id"
           className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
         >
           <Mail size={18} />
@@ -71,16 +71,16 @@ export default function Contact() {
 
       <div className="flex justify-center gap-4">
         <a
-          href="https://github.com/dzakiachmad"
+          href="https://github.com/jakyrubyjane"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-5 py-2 bg-zinc-900 text-white rounded-lg hover:bg-zinc-800 transition"
         >
           <Github size={18} />
           GitHub
-        </a>
+        </a>    
         <a
-          href="https://linkedin.com/in/namalinkedin"
+  href="https://www.linkedin.com/in/dzakiachmad"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-5 py-2 bg-[#0A66C2] text-white rounded-lg hover:bg-[#004182] transition"
