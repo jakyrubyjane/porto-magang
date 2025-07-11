@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { Sparkles } from "lucide-react";
 
 
 const words = ["Fullstack", "Software Engineer", "Web Developer"];
