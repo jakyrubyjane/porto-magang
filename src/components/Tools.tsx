@@ -8,10 +8,10 @@ const tools = [
   { name: "CSS", icon: "/skills/css.svg" },
   { name: "Bootstrap", icon: "/skills/bootstrap.png" },
   { name: "Tailwind CSS", icon: "/skills/tailwind.svg" },
-  { name: "Laravel", icon: "/skills/laravel.svg" },
-  { name: "Next.js", icon: "/skills/next.js.svg" },
+  { name: "Laravel", icon: "/skills/Laravel.svg" },
+  { name: "Next.js", icon: "/skills/Next.js.svg" },
   { name: "MySQL", icon: "/skills/mysql.svg" },
-  { name: "Vue.js", icon: "/skills/vue.js.svg" },
+  { name: "Vue.js", icon: "/skills/Vue.js.svg" },
 ];
 
 const containerVariants = {
