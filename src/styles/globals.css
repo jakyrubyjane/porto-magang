@@ -1,8 +1,27 @@
 @import "tailwindcss";
 
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-poppins), sans-serif;
+
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-light: #ffffff;
+  --bg-dark: #0f172a;
+  --text-light: #0f172a;
+  --text-dark: #ffffff;
 }
 
 @theme inline {
@@ -20,7 +39,27 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-[var(--bg-light)] text-[var(--text-light)] dark:bg-[var(--bg-dark)] dark:text-[var(--text-dark)];
+}
+.blinking-cursor {
+  animation: blink 1s steps(2, start) infinite;
+  color: inherit;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@keyframes fallingStars {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
 }
